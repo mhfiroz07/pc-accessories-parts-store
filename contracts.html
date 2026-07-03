@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PC Accessories Parts Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        .contact-section {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .contact-info-box {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+        .contact-info-box h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .form-group button {
+            background-color: #333;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Accessories Parts Store</h1>
+        <p>Quality Components for Your Computer Needs</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contracts.html">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-info">
+            <div class="contact-info-box">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> info@pcaccessoriesstore.com</p>
+                <p><strong>Phone:</strong> 1-800-PC-PARTS</p>
+                <p><strong>Address:</strong> 123 Tech Street, Silicon Valley, CA 94025</p>
+                <p><strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
+            </div>
+            
+            <div class="contact-info-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" style="color: #333; text-decoration: none;">Home</a></li>
+                    <li><a href="products.html" style="color: #333; text-decoration: none;">Products</a></li>
+                    <li><a href="about.html" style="color: #333; text-decoration: none;">About Us</a></li>
+                    <li><a href="menu.html" style="color: #333; text-decoration: none;">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2>Send Us a Message</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 PC Accessories Parts Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
