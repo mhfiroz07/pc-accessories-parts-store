@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pc-accessories-parts-store</title>
-    <style> 
+    <title>Menu - PC Accessories Parts Store</title>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -17,12 +17,68 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            background-color: #f7f7f7;
         }
         header {
             background-color: #333;
             color: white;
             padding: 1rem;
             text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .card h2 {
+            margin-bottom: 0.8rem;
+            color: #222;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            max-width: 400px;
+        }
+        input {
+            padding: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .links p {
+            margin-bottom: 0.4rem;
         }
         footer {
             background-color: #333;
@@ -31,37 +87,49 @@
             padding: 1rem;
             margin-top: auto;
         }
-
     </style>
 </head>
 <body>
     <header>
         <h1>PC Accessories Parts Store</h1>
+        <p>Quality Components for Your Computer Needs</p>
     </header>
-    <form>
-        <input type="email" name="email" placeholder="Enter your email"> <br>
-        <input type="password" name="password" placeholder="Enter your password">
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    <p>Enjoy your shopping experience! from <a href="index.html">index</a></p>
-    <p>Check out our <a href="products.html">products</a> page for the latest items.</p>
-    
+
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contracts.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contracts.html">Contact</a>
     </nav>
-    <form action="products.html" method="get">
-        <label for="search">Search for products:</label>
-        <input type="text" id="search" name="search" placeholder="Enter product name">
-        <button type="submit">Search</button>
-    </form>
+
+    <div class="container">
+        <div class="card">
+            <h2>Member Login</h2>
+            <form>
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="password" name="password" placeholder="Enter your password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="card links">
+            <h2>Quick Links</h2>
+            <p>Enjoy your shopping experience! Visit <a href="index.html">Home</a>.</p>
+            <p>Check out our <a href="products.html">products</a> page for the latest items.</p>
+        </div>
+
+        <div class="card">
+            <h2>Search Products</h2>
+            <form action="products.html" method="get">
+                <label for="search">Search for products:</label>
+                <input type="text" id="search" name="search" placeholder="Enter product name">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 PC Accessories Parts Store. All rights reserved.</p>
+        <p>&copy; 2026 PC Accessories Parts Store. All rights reserved.</p>
     </footer>
-    </body>
+</body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pc accessories parts store</title>
+    <title>Home - PC Accessories Parts Store</title>
     <style>
         * {
             margin: 0;
@@ -18,33 +18,77 @@
             flex-direction: column;
             min-height: 100vh;
         }
-    header {
+        header {
             background-color: #333;
             color: white;
             padding: 1rem;
             text-align: center;
         }
-    footer {
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        .home-section {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem;
             margin-top: auto;
-        }    
-        </style>
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>PC Accessories Parts Store</h1>
+        <p>Quality Components for Your Computer Needs</p>
     </header>
-    <!-- Comment: hypertext  reference in short href -->
-    <p>Enjoy your shopping experience! from <a href="menu.html">menu</a></p>
-    <p>Check out our <a href="products.html">products</a> page for the latest items.</p>
-    <p>Here you will find all the pc accessories and parts you need!</p>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contracts.html">Contact</a>
+    </nav>
 
-<footer>
-        <p>&copy; 2024 PC Accessories Parts Store. All rights reserved.</p>
+    <div class="container">
+        <h1>Welcome</h1>
+
+        <div class="home-section">
+            <p>Enjoy your shopping experience! Visit our <a href="menu.html">menu</a>.</p>
+        </div>
+
+        <div class="home-section">
+            <p>Check out our <a href="products.html">products</a> page for the latest items.</p>
+        </div>
+
+        <div class="home-section">
+            <p>Here you will find all the PC accessories and parts you need.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Accessories Parts Store. All rights reserved.</p>
     </footer>
 </body>
 </html>
